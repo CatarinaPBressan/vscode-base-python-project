@@ -1,0 +1,25 @@
+[project]
+name = "vscode-base-python-project"
+version = "0.1.0"
+description = "Template python project with VSCode configuration"
+authors = [
+    { name = "Catarina Bressan", email = "catarina@catarinapbressan.org" },
+]
+requires-python = ">=3.12"
+dependencies = ["python-dotenv (>=1.2.2,<2.0.0)"]
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.2,<10.0.0)",
+    "black (>=26.3.1,<27.0.0)",
+    "flake8 (>=7.3.0,<8.0.0)",
+    "isort (>=8.0.1,<9.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100

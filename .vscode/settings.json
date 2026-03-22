@@ -1,0 +1,17 @@
+{
+  "python.testing.pytestArgs": ["package/tests/"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "[python]": {
+    "editor.rulers": [101],
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.unusedImports": "explicit"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "isort.args": ["--profile", "black"]
+}
